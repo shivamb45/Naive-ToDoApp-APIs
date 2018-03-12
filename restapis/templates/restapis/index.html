@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Documenation Page for Naive TODO-APP API Usage">
+  <meta name="author" content="Shivam Bharadwaj">
+
+  <title>Documenation for Naive TODO-APP APIs</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron mt-3">
+      <h1>Naive TODO-App APIs</h1>
+      <p class="lead">Following Page describes how to use APIs. </p>
+      <p class="lead">A total of Three APIs are there as required by the task. Since Attributes didn't mentioned any requirement for USER ASSOCIATION, APIs are open to all</p>
+    </div>
+  </div>
+  <hr>
+
+  <h2 class="text-center">Required APIs by Screening Task</h2>
+  <div class="container">
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Add Task API
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="container">
+
+            <!-- URL -->
+            <div class="row">
+              <div class="col" style="padding:5px;">
+                <div class="card">
+                  <h5 class="card-header">URL</h5>
+                </div>
+              </div>
+
+              <div class="col" style="padding:5px;">
+                <div class="card">
+                  <h5 class="card-header">/addTask/</h5>
+                  <div class="card-body">
+                    <h5 class="card-title">Live Example URL</h5>
+                    <p class="card-text">https://shivambharadwaj.com/demo/naive-todo-app-api/addTask/</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- URL MEthod -->
+            <div class="row">
+              <div class="col" style="padding:5px;">
+                <div class="card">
+                  <h5 class="card-header">Method</h5>
+                </div>
+              </div>
+
+              <div class="col" style="padding:5px;">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">POST</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Requirement -->
+            <div class="row">
+              <div class="col" style="padding:5px;">
+                <div class="card">
+                  <h5 class="card-header">Requirement</h5>
+                </div>
+              </div>
+
+              <div class="col" style="padding:5px;">
+                <div class="card">
+                  <h5 class="card-header">Accepts JSON Object</h5>
+                  <div class="card-body">
+                    <p class="card-text">The API requires a JSON Object with attribute <strong>taskName</strong>. Other Attributes such as <strong>isDone</strong>, <strong>doneAt</strong> are optional.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Requirement -->
+            <div class="row">
+              <div class="col" style="padding:5px;">
+                <div class="card">
+                  <h5 class="card-header">Returns</h5>
+                </div>
+              </div>
+
+              <div class="col" style="padding:5px;">
+                <div class="card">
+                  <h5 class="card-header">JSON Object</h5>
+                  <div class="card-body">
+                    <p class="card-text">On Successfull execution, API returns JSON Response with Attrbutes <strong>status</strong> &amp <strong>task</strong>.</p>
+                    <p class="card-text"><em>task</em> contains task attributes as described in problem statememt i.e. taskId, taskName, isDone, doneAt and createdAt.</p>
+                    <p class="card-text">On Unsuccessfull Execution, a Relevant Response is returned</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Edit Task API
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+
+            <div class="container">
+
+              <!-- URL -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">URL</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">/editTask/&lt taskId &gt</h5>
+                    <div class="card-body">
+                      <h5 class="card-title">Live Example URL</h5>
+                      <p class="card-text">https://shivambharadwaj.com/demo/naive-todo-app-api/editTask/1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- URL MEthod -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">Method</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">POST</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Requirement -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">Requirement</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">Accepts JSON Object</h5>
+                    <div class="card-body">
+                      <p class="card-text">The API requires a JSON Object with attribute <strong>taskId</strong> and <strong>taskName</strong>. Other Attributes such as <strong>isDone</strong>, <strong>doneAt</strong> are optional.</p>
+                      <p class="card-text">The API requires that taskId supplied in JSON obj and URL should be same.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Requirement -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">Returns</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">JSON Object</h5>
+                    <div class="card-body">
+                      <p class="card-text">On Successfull execution, API returns JSON Response with UPDATED Attrbutes <strong>status</strong> &amp <strong>task</strong>.</p>
+                      <p class="card-text"><em>task</em> contains task attributes as described in problem statememt i.e. taskId, taskName, isDone, doneAt and createdAt.</p>
+                      <p class="card-text">On Unsuccessfull Execution, a Relevant Response is returned</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              View / Read All tasks API
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+
+            <div class="container">
+
+              <!-- URL -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">URL</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">/tasks/</h5>
+                    <div class="card-body">
+                      <h5 class="card-title">Live Example URL</h5>
+                      <p class="card-text">https://shivambharadwaj.com/demo/naive-todo-app-api/tasks/</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- URL MEthod -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">Method</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">GET</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Requirement -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">Requirement</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">None</h5>
+                    <div class="card-body">
+                      <p class="card-text">The API requires no input</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Requirement -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">Returns</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">JSON Object Array</h5>
+                    <div class="card-body">
+                      <p class="card-text">The API returns JSON object with attributes <strong>status</strong> and <strong>tasks</strong>.</p>
+                      <p class="card-text"><strong>tasks</strong> attribute contains JSON obj Array with all tasks.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+  <h2 class="text-center">Extra</h2>
+  <div class="container">
+    <div id="accordian2">
+
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              View Task (Single)
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+          <div class="card-body">
+
+            <div class="container">
+
+              <!-- URL -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">URL</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">/viewTask/&lt taskId &gt</h5>
+                    <div class="card-body">
+                      <h5 class="card-title">Live Example URL</h5>
+                      <p class="card-text">https://shivambharadwaj.com/demo/naive-todo-app-api/viewTask/1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- URL MEthod -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">Method</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">GET</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Requirement -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">Requirement</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">None</h5>
+                    <div class="card-body">
+                      <p class="card-text">The API requires no input</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Requirement -->
+              <div class="row">
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">Returns</h5>
+                  </div>
+                </div>
+
+                <div class="col" style="padding:5px;">
+                  <div class="card">
+                    <h5 class="card-header">JSON Object Array</h5>
+                    <div class="card-body">
+                      <p class="card-text">The API returns JSON object with attributes <strong>status</strong> and <strong>task</strong>.</p>
+                      <p class="card-text"><strong>task</strong> attribute contains JSON obj of task.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <hr>
+
+
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
